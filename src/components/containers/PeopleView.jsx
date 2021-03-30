@@ -1,6 +1,6 @@
 import React from 'react'
 
-import PeopleList from './PeopleList'
+import PeopleList from '../people/PeopleList'
 import classes from './PeopleView.module.sass'
 
 const PeopleView = () => {
