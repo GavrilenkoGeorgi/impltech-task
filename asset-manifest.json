@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/impltech-task/static/css/main.3bfb3291.chunk.css",
-    "main.js": "/impltech-task/static/js/main.96088ae5.chunk.js",
-    "main.js.map": "/impltech-task/static/js/main.96088ae5.chunk.js.map",
+    "main.css": "/impltech-task/static/css/main.fc5eb1f1.chunk.css",
+    "main.js": "/impltech-task/static/js/main.9b9a24ea.chunk.js",
+    "main.js.map": "/impltech-task/static/js/main.9b9a24ea.chunk.js.map",
     "runtime-main.js": "/impltech-task/static/js/runtime-main.16c464f1.js",
     "runtime-main.js.map": "/impltech-task/static/js/runtime-main.16c464f1.js.map",
     "static/js/2.d9b8cdd9.chunk.js": "/impltech-task/static/js/2.d9b8cdd9.chunk.js",
     "static/js/2.d9b8cdd9.chunk.js.map": "/impltech-task/static/js/2.d9b8cdd9.chunk.js.map",
     "index.html": "/impltech-task/index.html",
-    "static/css/main.3bfb3291.chunk.css.map": "/impltech-task/static/css/main.3bfb3291.chunk.css.map",
+    "static/css/main.fc5eb1f1.chunk.css.map": "/impltech-task/static/css/main.fc5eb1f1.chunk.css.map",
     "static/js/2.d9b8cdd9.chunk.js.LICENSE.txt": "/impltech-task/static/js/2.d9b8cdd9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16c464f1.js",
     "static/js/2.d9b8cdd9.chunk.js",
-    "static/css/main.3bfb3291.chunk.css",
-    "static/js/main.96088ae5.chunk.js"
+    "static/css/main.fc5eb1f1.chunk.css",
+    "static/js/main.9b9a24ea.chunk.js"
   ]
 }
