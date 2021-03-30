@@ -1,1 +1,1 @@
-export { children } from './propTypes'
+export { children, person } from './propTypes'
