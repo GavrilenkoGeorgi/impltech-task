@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Impltech test task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Вивести список персонажів по API “https://swapi.dev/api/people/” - Axios/Fetch
+Для кожного персонажа повинні відображатись його name, birth_year;
+Поряд з персонажем додати кнопку ‘comment’ з полем вводу, по натисканню на яку добавляється коментар до відповідного персонажа;
+Стилістика на ваш розсуд. Оцінюється реалізація функціоналу, структура проекта і компонентів. Семантика буде плюсом в карму)
 
 ## Available Scripts
 
