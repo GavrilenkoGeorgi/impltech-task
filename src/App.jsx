@@ -1,11 +1,11 @@
 import React from 'react'
-import CommonLayout from './components/layout/CommonLayout'
+import MainLayout from './components/layout/MainLayout'
 import PeopleView from './components/people/PeopleView'
 
 const App = () => {
-	return <CommonLayout>
+	return <MainLayout>
 		<PeopleView />
-	</CommonLayout>
+	</MainLayout>
 }
 
 export default App

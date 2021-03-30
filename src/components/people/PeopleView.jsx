@@ -1,11 +1,14 @@
 import React from 'react'
 
 import PeopleList from './PeopleList'
+import classes from './PeopleView.module.sass'
 
 const PeopleView = () => {
 	return <>
-		<h1>List of people</h1>
-		<PeopleList />
+		<h1 className={classes.header}>List of people</h1>
+		<section className={classes.container}>
+			<PeopleList />
+		</section>
 	</>
 }
 

@@ -5,6 +5,8 @@ import Person from './Person'
 import NewCommentForm from '../comments/NewCommentForm'
 import { addCommentsAndIdFields, generateSimpleID } from '../../utils'
 
+import classes from './PeopleList.module.sass'
+
 const PeopleList = () => {
 	const [ list, setList ] = useState([])
 
@@ -30,7 +32,10 @@ const PeopleList = () => {
 
 	return <>
 		{list.length && list.map(person => (
-			<section key={person.id}>
+			<section
+				key={person.id}
+				className={classes.card}
+			>
 				<Person
 					person={person}
 				/>

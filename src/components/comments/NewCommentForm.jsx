@@ -2,6 +2,8 @@ import React from 'react'
 import { func, string } from 'prop-types'
 import { useInput } from '../../hooks/useInput'
 
+import classes from './NewCommentForm.module.sass'
+
 const NewCommentForm = ({ id, addComment }) => {
 
 	const { value, bind, reset } = useInput('')
@@ -12,14 +14,21 @@ const NewCommentForm = ({ id, addComment }) => {
 		reset()
 	}
 
-	return <form onSubmit={handleSubmit}>
+	return <form onSubmit={handleSubmit} className={classes.form}>
 		<label>
-			<input
-				type="text"
+			<textarea
+				className={classes.textarea}
+				rows="3"
+				required
+				placeholder="Your comment.."
 				{...bind}
 			/>
 		</label>
-		<input type="submit" value="Comment" />
+		<input
+			className={classes.button}
+			type="submit"
+			value="add"
+		/>
 	</form>
 }
 
