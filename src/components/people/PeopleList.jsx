@@ -30,8 +30,10 @@ const PeopleList = () => {
 		setList(() => [ ...result ] )
 	}
 
+	if (!list.length) return <>Just a sec...</>
+
 	return <>
-		{list.length && list.map(person => (
+		{list.map(person => (
 			<section
 				key={person.id}
 				className={classes.card}
