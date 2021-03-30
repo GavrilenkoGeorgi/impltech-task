@@ -20,6 +20,7 @@ Person.propTypes = {
 Person.defaultProps = {
 	name: 'Name required',
 	birth_year: 'Year required',
+	comments: []
 }
 
 const MemodPerson = React.memo(Person)

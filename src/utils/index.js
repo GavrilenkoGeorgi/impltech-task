@@ -8,12 +8,13 @@
  * @returns {Object[]} - Array person objects with empty comment arrays
  */
 
-export const addCommentsField = arrayOfObjects => {
+export const addCommentsAndIdFields = arrayOfObjects => {
 	if (!arrayOfObjects || !Array.isArray(arrayOfObjects))
 		throw new Error('Can\'t add checkboxes, array of employee objects is missing.')
 
 	for (let item of arrayOfObjects) {
-		item.comments = []
+		item.comments = [],
+		item.id = generateSimpleID()
 	}
 	return arrayOfObjects
 }

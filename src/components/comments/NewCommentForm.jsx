@@ -2,13 +2,13 @@ import React from 'react'
 import { func, string } from 'prop-types'
 import { useInput } from '../../hooks/useInput'
 
-const NewCommentForm = ({ name, addComment }) => {
+const NewCommentForm = ({ id, addComment }) => {
 
 	const { value, bind, reset } = useInput('')
 
 	const handleSubmit = event => {
 		event.preventDefault()
-		addComment(name, value)
+		addComment(id, value)
 		reset()
 	}
 
@@ -24,7 +24,7 @@ const NewCommentForm = ({ name, addComment }) => {
 }
 
 NewCommentForm.propTypes= {
-	name: string.isRequired,
+	id: string.isRequired,
 	addComment: func.isRequired
 }
 

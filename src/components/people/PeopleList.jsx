@@ -3,25 +3,25 @@ import { getPeople } from '../../api/people'
 
 import Person from './Person'
 import NewCommentForm from '../comments/NewCommentForm'
-import { addCommentsField, generateSimpleID } from '../../utils'
+import { addCommentsAndIdFields, generateSimpleID } from '../../utils'
 
 const PeopleList = () => {
 	const [ list, setList ] = useState([])
 
 	useEffect(() => {
 		getPeople().then(({ results }) => {
-			setList(addCommentsField(results))
+			setList(addCommentsAndIdFields(results))
 		})
 	}, [])
 
-	const addComment = (name, comment) => {
+	const addComment = (id, comment) => {
 		const newComment = {
 			id: generateSimpleID(),
 			comment
 		}
 
 		const result = list.map(person =>
-			person.name === name // should be ID i guess
+			person.id === id
 				? { ...person, comments: [ ...person.comments, newComment ] }
 				: person)
 
@@ -30,12 +30,12 @@ const PeopleList = () => {
 
 	return <>
 		{list.length && list.map(person => (
-			<section key={person.name}>
+			<section key={person.id}>
 				<Person
 					person={person}
 				/>
 				<NewCommentForm
-					name={person.name} // Suppose name's are unique identifiers
+					id={person.id}
 					addComment={addComment}
 				/>
 			</section>
